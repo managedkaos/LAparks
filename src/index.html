@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 3, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 25%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="map">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+		</div>
+		<div class="col-md-6">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+</div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+		   <script>
+      function initMap() {
+        var myLatLng = {lat:34.09224683, lng: -118.16143406};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4hKVO4EK_Q9WPQ-oaq_8DjUIutUO6YS8&callback=initMap">
+    </script>
+  </body>
+</html>

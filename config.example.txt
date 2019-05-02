@@ -1,0 +1,9 @@
+[lacounty]
+url = https://data.lacounty.gov/resource/u2yw-tuvv.json
+querystring = {"category2":"Parks and Gardens"}
+
+[google]
+api_key = 123456789
+
+[yelp]
+api_key = 123456789
